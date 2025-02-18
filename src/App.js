@@ -7,15 +7,25 @@ import Navbar from './components/Navbar'
 
 
 const App = () => {
+
   return (
+
     <>
+
       <Navbar />
+
       <Hero />
+
       <Card />
+
       <Food />
+
       <Category />
+
     </>
+
   )
+
 }
 
 export default App
