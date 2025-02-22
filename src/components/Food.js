@@ -6,18 +6,23 @@ const Food = () => {
     const [foods, setFoods] = useState(data);
 
     const filterType = (category) => {
+
         setFoods(
             data.filter((item) => {
                 return item.category === category;
             })
         )
+
     }
+
     const filterPrice = (price) => {
+
         setFoods(
             data.filter((item) => {
                 return item.price === price;
             })
         )
+
     }
 
     return (
@@ -25,7 +30,9 @@ const Food = () => {
             <h1 className='text-orange-600 font-bold text-4xl text-center'>
                 Top Rated Menu Items
             </h1>
+
             <div className='flex flex-col lg:flex-row justify-between'>
+
                 {/* Filter Type */}
                 <div>
                     <p className='font-bold text-gray-700'>Filter Type</p>
